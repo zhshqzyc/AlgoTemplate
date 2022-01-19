@@ -5,7 +5,26 @@ int[,] matrix = new int[,] { { 1, 4, 7, 11, 15 },{ 2, 5, 8, 12, 19 },{ 3, 6, 9, 
 int a = matrix.GetLength(0);
 int b = matrix.GetLength(1);
 
+forloop
+for (int i = 0; i < arrayOfMessages.GetLength(0); i++)
+{
+    for (int j = 0; j < arrayOfMessages.GetLength(1); j++)
+    {
+        string s = arrayOfMessages[i, j];
+        Console.WriteLine(s);
+    }
+}
+
 If it is a jagged array
  int[][] matrix
  int a = matrix.Length;
  int b = matrix[0].Length;
+ 
+ forloop
+ for (int i = 0; i < xDimension; i++)
+  {
+    for (int j = 0; j < yDimension; j++)
+      {
+        Console.WriteLine(InputArray[i][j]);
+      }
+  }
